@@ -1,10 +1,16 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
+import { isAngularJsRoutePath } from './app-routing.module';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angularjs-to-angular';
+  constructor(private location: Location) {}
+
+  isAjsRoutePath(): boolean {
+    return isAngularJsRoutePath(this.location.path());
+  }
 }
