@@ -6,8 +6,13 @@ import {
   UrlTree,
 } from '@angular/router';
 import { AngularComponent } from './angular/angular.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
   {
     path: 'angular',
     component: AngularComponent,

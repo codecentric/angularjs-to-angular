@@ -9,6 +9,7 @@ import { UpgradedComponentsModule } from './upgraded-components/upgraded-compone
 import * as angular from 'angular';
 import { app, prepare } from 'src/app-ajs/app';
 import { AngularComponent } from './angular/angular.component';
+import { HomeComponent } from './home/home.component';
 
 setAngularJSGlobal(angular);
 
@@ -17,6 +18,7 @@ setAngularJSGlobal(angular);
     AppComponent,
     FooComponent,
     AngularComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
