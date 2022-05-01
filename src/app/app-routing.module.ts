@@ -43,13 +43,7 @@ export const replaceRouteParamsWithRegex = (routePath: string): string =>
 
 class CustomHandlingStrategy implements UrlHandlingStrategy {
   shouldProcessUrl(url: UrlTree): boolean {
-    const angularUrl = !isAngularJsRoutePath(url.toString());
-    if (angularUrl) {
-      console.debug(url + ' -> Angular router');
-    } else {
-      console.debug(url + ' -> AngularJS router');
-    }
-    return angularUrl;
+    return !isAngularJsRoutePath(url.toString());
   }
 
   extract(url: UrlTree): UrlTree {
