@@ -2,5 +2,12 @@
 
 <div>AppComponent is part of Angular module.</div>
 
+<nav>
+  <ul>
+    <li routerLink="/angular" routerLinkActive="active">Angular page</li>
+    <li routerLink="/angularjs" routerLinkActive="active">AngularJS page</li>
+  </ul>
+</nav>
+
 <router-outlet></router-outlet>
 <app-upgraded-router *ngIf="isAjsRoutePath()"></app-upgraded-router>

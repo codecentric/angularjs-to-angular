@@ -1,0 +1,21 @@
+nav {
+  ul {
+    list-style: none;
+    align-items: left;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+
+    li {
+      margin: 6px;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid gray;
+      cursor: pointer;
+
+      &.active {
+        background-color: lightgray;
+      }
+    }
+  }
+}
