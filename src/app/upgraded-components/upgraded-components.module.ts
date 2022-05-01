@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterDirective } from './upgraded-components';
+import { RouterDirective, BarDirective } from './upgraded-components';
 
 @NgModule({
-  declarations: [RouterDirective],
+  declarations: [RouterDirective, BarDirective],
   imports: [CommonModule],
-  exports: [RouterDirective],
+  exports: [RouterDirective, BarDirective],
 })
-export class UpgradedComponentsModule {}
+export class UpgradedComponentsModule { }
